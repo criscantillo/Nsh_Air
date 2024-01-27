@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Nsh_Air.Api.Models;
 using Nsh_Air.Domain;
-using Nsh_Air.Services;
 
 namespace Nsh_Air.Api.Controllers
 {
@@ -18,7 +17,8 @@ namespace Nsh_Air.Api.Controllers
 
         [HttpGet]
         [ActionName(nameof(SearchFlights))]
-        public async Task<ActionResult<IList<Flight>>> SearchFlights(string origin, string destination)
+        public async Task<ActionResult<IList<Flight>>> SearchFlights(
+            string origin, string destination)
         {
             Journey journey = await _searchFlight.GetJourney(origin, destination);
             JourneyResponse journeyResponse = new JourneyResponse 

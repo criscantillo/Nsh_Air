@@ -20,7 +20,7 @@ namespace Nsh_Air.Services
 
         public async Task<IList<FlightDetail>> GetFlights()
         {
-            string flyRouteApi = _configuration.GetValue<string>("FlyRouteApi");
+            string flyRouteApi = _configuration.GetValue<string>("FlyApi");
             RestRequest request = new RestRequest(flyRouteApi);
 
             try

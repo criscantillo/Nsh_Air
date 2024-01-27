@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.WebSockets;
 using Nsh_Air.Domain;
 using Nsh_Air.Infrastructure;
 using Nsh_Air.Services;
@@ -22,6 +21,7 @@ builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true
 builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddScoped<IFlightService, NewShFlightService>();
+builder.Services.AddScoped<ICurrencyService, CurrencyService>();
 builder.Services.AddScoped<ISearchFlight, SearchFlight>();
 
 var app = builder.Build();
