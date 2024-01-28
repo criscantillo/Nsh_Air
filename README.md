@@ -19,3 +19,5 @@ Obtener las tasas de conversión (USD,MXN,EUR)
 ```
 https://localhost:7099/currency
 ```
+
+_Para la tasa de conversión se utiliza la API gratuita de https://api.freecurrencyapi.com_
