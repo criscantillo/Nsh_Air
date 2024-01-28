@@ -10,12 +10,12 @@ donet run
 ## Métodos
 La API cuenta con 2 endpoints de tipo GET:
 
-### Obtener los vuelos, enviando el origen y el destino
+Obtener los vuelos, enviando el origen y el destino
 ```
 https://localhost:7099/flight?origin={origen}&destination={destino}
 ```
 
-### Obtener las tasas de conversión (USD,MXN,EUR)
+Obtener las tasas de conversión (USD,MXN,EUR)
 ```
 https://localhost:7099/currency
 ```
