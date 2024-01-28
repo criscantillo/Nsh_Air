@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Nsh_Air.Api.Models;
-using Nsh_Air.Domain;
 using Nsh_Air.Services;
 
 namespace Nsh_Air.Api.Controllers
